@@ -781,38 +781,38 @@ function createModalConfettiBurst() {
 
 // Setup event listeners
 function setupEventListeners() {
-    // Add keyboard navigation
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowRight') {
-            navigateSection('next');
-        } else if (e.key === 'ArrowLeft') {
-            navigateSection('prev');
-        } else if (e.key === 'Escape') {
-            showSection('homepage');
-        }
-    });
+    // Add keyboard navigation - DISABLED to ensure only button clicks work
+    // document.addEventListener('keydown', function(e) {
+    //     if (e.key === 'ArrowRight') {
+    //         navigateSection('next');
+    //     } else if (e.key === 'ArrowLeft') {
+    //         navigateSection('prev');
+    //     } else if (e.key === 'Escape') {
+    //         showSection('homepage');
+    //     }
+    // });
     
-    // Add touch gestures for mobile
-    let touchStartX = 0;
-    let touchEndX = 0;
+    // Add touch gestures for mobile - DISABLED to prevent automatic navigation
+    // let touchStartX = 0;
+    // let touchEndX = 0;
     
-    document.addEventListener('touchstart', function(e) {
-        touchStartX = e.changedTouches[0].screenX;
-    });
+    // document.addEventListener('touchstart', function(e) {
+    //     touchStartX = e.changedTouches[0].screenX;
+    // });
     
-    document.addEventListener('touchend', function(e) {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
+    // document.addEventListener('touchend', function(e) {
+    //     touchEndX = e.changedTouches[0].screenX;
+    //     handleSwipe();
+    // });
     
-    function handleSwipe() {
-        if (touchEndX < touchStartX - 50) {
-            navigateSection('next');
-        }
-        if (touchEndX > touchStartX + 50) {
-            navigateSection('prev');
-        }
-    }
+    // function handleSwipe() {
+    //     if (touchEndX < touchStartX - 50) {
+    //         navigateSection('next');
+    //     }
+    //     if (touchEndX > touchStartX + 50) {
+    //         navigateSection('prev');
+    //     }
+    // }
     
     // Add hover music effects to text elements
     addHoverMusicEffects();
