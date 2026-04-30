@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes - For My Love</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="birthday-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Homepage Section -->
+    <section id="homepage" class="section active">
+        <div class="stars-container"></div>
+        <div class="floating-hearts"></div>
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center text-white" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="display-3 mb-4 romantic-font">آسمان کے ستاروں میں... میں نے تمہیں پایا 🌙</h1>
+                <p class="lead mb-5">کسی غیرمعمولی شخص کے لیے ایک خاص سفر</p>
+                <button class="btn btn-lg romantic-btn" onclick="showSection('lovestory')">
+                    <i class="fas fa-heart me-2"></i>ہمارا کہانی شروع کریں
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Story Timeline Section -->
+    <section id="lovestory" class="section">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 text-white romantic-font">ہمارا خوبصورت سفر</h2>
+                <p class="lead text-white-50">ہر لمحہ تمہارے ساتھ قیمتی ہے</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="romantic-font">جب ہم ملے</h3>
+                        <div class="timeline-image mb-3">
+                            <img src="img/1card.jpeg" alt="First Meeting" class="timeline-photo">
+                        </div>
+                        <p>وہ دن عام لگ رہا تھا... لیکن پھر تم میری زندگی میں آئیں اور سب کچھ بدل گیا۔ کائنات نے ہمیں ملانے کی سازش کی۔ 💫</p>
+                        <div class="timeline-date">✨ خاص شروعات</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="romantic-font">ہمارا پہلا گفتگو</h3>
+                        <div class="timeline-image mb-3">
+                            <img src="img/2card.jpeg" alt="First Talk" class="timeline-photo">
+                        </div>
+                        <p>جب پہلی بار ہم ملے 12 دسمبر میں بتا نہیں سکتی میں کس خوف میں تھی۔ میں نہیں جانتی تھی کہ ہمارا ساتھ اتنی دور تک کہ ہوگا۔ مجھے آپ کو قبول کرنے میں تھوڑی دیر تو لی مگر یہ میری زندگی کے سب سے خوبصورت فیصلہ تھا۔ 💕</p>
+                        <div class="timeline-date">💬 جادوی رابطہ</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="romantic-font">جب میں سمجھی...</h3>
+                        <div class="timeline-image mb-3">
+                            <img src="img/3card.jpeg" alt="Realization" class="timeline-photo">
+                        </div>
+                        <p>یہ کوئی واحد لمحہ نہیں تھا، بلکہ بے شمار چھوٹی چھوٹی باتوں کا مجموعہ تھا۔ تمہاری مسکراہٹ، تمہاری مہربانی، تمہاری خوبصورت روح۔ میں مکمل طور پر، بےامید طور پر محبت میں گرفتار تھی۔ ❤️</p>
+                        <div class="timeline-date">💖 محبت نے مجھے تلاش کیا</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="romantic-font">ساتھ بہترین یادوں</h3>
+                        <div class="timeline-image mb-3">
+                            <img src="img/4card.jpeg" alt="Memories" class="timeline-photo">
+                        </div>
+                        <p>طلوع آفتاب کافی سے نصف رات کی گفتگو تک، مہمجوں سے خاموش لمحات تک - ہر سیکنڈ تمہارے ساتھ میری پسندیدہ یاد ہے۔ تم میرا بہترین باب ہو۔ 🌟</p>
+                        <div class="timeline-date">📖 ہمارا کہانی جاری ہے</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-lg romantic-btn" onclick="showSection('birthday')">
+                    سالگرہ مبارک 🎂 <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Special Page -->
+    <section id="birthday" class="section">
+        <!-- Floating Hearts Background -->
+        <div class="floating-hearts-birthday"></div>
+        
+        <!-- Moving Text with Stars -->
+        <div class="moving-text-container">
+            <div class="birthday-moving-text" style="left: 10%;">Happy Birthday My Life</div>
+            <div class="birthday-moving-text" style="left: 15%;">Happy Birthday My Life</div>
+            <div class="birthday-moving-text" style="left: 10%;">Happy Birthday My Life</div>
+            <div class="birthday-moving-text" style="left: 15%;">Happy Birthday My Life</div>
+            <div class="birthday-moving-text" style="left: 10%;">Happy Birthday My Life</div>
+            <div class="birthday-moving-text" style="left: 15%;">Happy Birthday My Life</div>
+            <div class="birthday-moving-text" style="left: 15%;">Happy Birthday My Love</div>
+            <div class="birthday-moving-text" style="left: 10%;">Happy Birthday My Love</div>
+            <div class="birthday-moving-text" style="left: 15%;">Happy Birthday My Love</div>
+            <div class="birthday-moving-text" style="left: 10%;">Happy Birthday My Love</div>
+            <div class="birthday-moving-text" style="left: 05%;">Happy Birthday My Love</div>
+            <div class="birthday-moving-text" style="left: 10%;">Happy Birthday My Love</div>
+        </div>
+        
+        <!-- Stars Effect -->
+        <div class="birthday-stars"></div>
+        
+        <div class="container py-5">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+                <h1 class="display-1 romantic-font mb-4 animated-birthday-text" style="color: #800000;">
+                    🎂 سالگرہ مبارک میرے پیارے 🎂  fs
+                    
+                </h1>
+                <h2 class="display-4 romantic-font mb-4" style="color: #800000;">سالگرہ مبارک میرے پیارے اسفند</h2>
+              
+
+                <!-- Romantic Lines Section -->
+                <div class="romantic-lines-container mb-5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="romantic-line-card">
+                        <p class="lead romantic-font text-warning">"تم میری آنکھوں کا ستارہ ہو، میری دھڑکنوں کی سرگم ہو"</p>
+                    </div>
+                    <div class="romantic-line-card" data-aos="fade-up" data-aos-delay="500">
+                        <p class="lead romantic-font text-info">"تمہاری مسکراہٹ میری دنیا کو روشن کر دیتا ہے"</p>
+                    </div>
+                    <div class="romantic-line-card" data-aos="fade-up" data-aos-delay="700">
+                        <p class="lead romantic-font text-success">"ہر لمحہ تمہارے ساتھ ایک جنت ہے"</p>
+                    </div>
+                </div>
+
+                
+                <!-- Memories Section -->
+                <div class="memories-container mb-5" data-aos="fade-up" data-aos-delay="1100">
+                    <h3 class="romantic-font text-white mb-4">� ہماری یادوں کا مجموعہ �</h3>
+                    
+                    <!-- First Row of Memory Cards -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1200">
+                            <div class="memory-card">
+                                <img src="img/1b.jpeg" alt="Memory 1" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">جب مجھہ ان سے محبت ہونی شروع ہوئی… تو میں نارمل لوگوں کی طرح بات نہیں کرتی تھی 😌 میں ان کا اسٹاک کرتی تھی… اور اسکرین شاٹس لیتی تھی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1300">
+                            <div class="memory-card">
+                                <img src="img/2b.jpeg" alt="Memory 2" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">جب انہوں نے پہلی دفا میرے لیے شاپنگ کی… تو سوکس لے آئے 🧦 نہ ڈریس، نہ شوز… سیدھا سوکس 🤣 تب سمجھ آیا کہ بندہ سیمپل بھی ہے اور یونیک بھی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1400">
+                            <div class="memory-card">
+                                <img src="img/3b.jpeg" alt="Memory 3" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">پہلے پھول… پھر گاری رائیڈ 🚗🌸 اسٹیپ بائی اسٹیپ انکی کوشش اپگریڈ ہو رہی تھی 😂 اور میں بھی دھیرے دھیرے امپریس ہو رہی تھی</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Second Row of Memory Cards -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1500">
+                            <div class="memory-card">
+                                <img src="img/4b.jpeg" alt="Memory 4" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">پھر چلتے چلتے نیو یئر آ گیا 🎉 اور ایک یممی کیک کے ساتھ ہم نے 2026 بھی ساتھ شروع کیا 🎂❤️ مطلب آفیشلی… نئے سال کی شروعات بھی ساتھ ہوئی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1600">
+                            <div class="memory-card">
+                                <img src="img/5b.jpeg" alt="Memory 5" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">انہوں نے کجری دیئے… اور ہم نے سوحا بس گفٹ ہے 😌 لیکن اصل میں تو یہ محبت کا وائرس تھا 😂 جو سیدھا دل تک چلا گیا</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1700">
+                            <div class="memory-card">
+                                <img src="img/6b.jpeg" alt="Memory 6" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">اب تو ہد ہو گئی 😂 یہ محبت کی بیماری اتنی پھیل گئی کہ پورے جسم پر حاوی ہو گئی ❤️ اور انکے بغیر تو سکون بھی روٹھ گیا… اداسی ہی اداسی رہنے لگی</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Third Row of Memory Cards -->
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1800">
+                            <div class="memory-card">
+                                <img src="img/7b.jpeg" alt="Memory 7" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">اور پھر وہ لمحہ بھی آ گیا… جب وہ اپنے گھر والوں کے ساتھ ہمارے گھر آئے ❤️ تب سمجھ آیا کہ یہ رشتہ سچ میں کتنا خاص ہے 💕</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1900">
+                            <div class="memory-card">
+                                <img src="img/8b.jpeg" alt="Memory 8" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">تم ہمیں ملے ہو، یہ اتصاف تھوری ہے…❤️❤️ یہ محبت ہے جناب، کوئی مذاق تھوری ہے</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="2000">
+                            <div class="memory-card">
+                                <img src="img/9b.jpeg" alt="Memory 9" class="memory-card-img">
+                                <div class="memory-card-body">
+                                    <p class="memory-card-text">اب تو بس یہی پلان ہے 😌 کہ تمہیں گھر سے 'آفیشلی کڈنیپ' کر کے لے جاؤں 🚗❤️ خود ڈرائیو کروں گی… اور ڈیسٹینیشن صرف ہم ہوں گے 💕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Love Messages -->
+                <div class="love-messages-container mb-5" data-aos="fade-up" data-aos-delay="2300">
+                    <div class="love-message-card">
+                        <p class="lead romantic-font text-pink">"تم صرف میری محبت نہیں ہو، تم میری سکون، میری خوشی، میرا گھر ہو"</p>
+                    </div>
+                    <div class="love-message-card" data-aos="fade-up" data-aos-delay="2500">
+                        <p class="lead romantic-font text-pink">"تمہارے بغیر میری زندگی ایک کتاب ہے جس میں الفاظ نہیں، صرف خالی صفحات ہیں"</p>
+                    </div>
+                </div>
+
+                <div class="confetti-container" id="confetti"></div>
+                
+                <div class="personal-message mt-5" data-aos="fade-up" data-aos-delay="2100">
+                    <p class="lead text-white romantic-font">
+                        "آج تمہارے خاص دن میں تمہیں بتانا چاہتا ہوں کہ تم میرے لیے کتنی خاص ہو...<br>
+                        تم ہر دن میری دنیا کو روشن کرتے ہو، تم میری سب سے بڑی خوشی ہو"<br>
+                        <span class="text-warning">سالگرہ مبارک میری ہمیشہ کے لیے! ❤️</span>
+                    </p>
+                </div>
+                
+                <div class="mt-5">
+                    <button class="btn btn-lg romantic-btn" onclick="showSection('gallery')">
+                        ہماری یادوں کی تلاش کریں <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secret Message Page -->
+    <section id="secret" class="section">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <div id="secretContent">
+                    <h2 class="display-4 text-white romantic-font mb-4" data-aos="fade-up">
+                        I have something to tell you... 💖
+                    </h2>
+                    <button class="btn btn-lg romantic-btn" onclick="revealSecret()" data-aos="fade-up" data-aos-delay="200">
+                        Click for a Secret 💖
+                    </button>
+                </div>
+                
+                <div id="secretMessage" style="display: none;">
+                    <div class="typing-text text-white romantic-font display-5 mb-4" data-aos="fade-in">
+                        I fall for you every single day... again and again ❤️
+                    </div>
+                    <p class="lead text-white-50" data-aos="fade-up" data-aos-delay="500">
+                        Every morning I wake up loving you more than yesterday.<br>
+                        You are my forever, my always, my everything.
+                    </p>
+                    <div class="mt-5">
+                        <button class="btn btn-lg romantic-btn" onclick="showSection('gallery')">
+                            Explore Our Memories <i class="fas fa-images ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 text-white romantic-font">ہماری خوبصورت یادیں</h2>
+                <p class="lead text-white-50">ہر تصویر ہماری محبت کی کہانی بتاتی ہے</p>
+            </div>
+            
+            <div class="gallery-grid full-page-gallery">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m1.jpeg')">
+                        <img src="img/m1.jpeg" alt="Memory 1">
+                        <p>📸 ہمارا پہلا ساتھ 🌹</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m2.jpeg')">
+                        <img src="img/m2.jpeg" alt="Memory 2">
+                        <p>� تمہاری مسکراہٹ 💕</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m3.jpeg')">
+                        <img src="img/m3.jpeg" alt="Memory 3">
+                        <p>🤝 ہماری پہلی ملاقات �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m4.jpeg')">
+                        <img src="img/m4.jpeg" alt="Memory 4">
+                        <p>☕ کافی کی مہربانی 🥰</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m5.jpeg')">
+                        <img src="img/m5.jpeg" alt="Memory 5">
+                        <p>🚗 گاڑی میں سفر 🎵</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m6.jpeg')">
+                        <img src="img/m6.jpeg" alt="Memory 6">
+                        <p>🎂 سالگرہ کا کیک 🎉</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m7.jpeg')">
+                        <img src="img/m7.jpeg" alt="Memory 7">
+                        <p>🌙 رات کی یاد �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m8.jpeg')">
+                        <img src="img/m8.jpeg" alt="Memory 8">
+                        <p>�️ ساتھ کھانا 😋</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m9.jpeg')">
+                        <img src="img/m9.jpeg" alt="Memory 9">
+                        <p>🎬 فلم کا وقت 🍿</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m10.jpeg')">
+                        <img src="img/m10.jpeg" alt="Memory 10">
+                        <p>� پارک کی چہل قدمی �️</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1100">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m11.jpeg')">
+                        <img src="img/m11.jpeg" alt="Memory 11">
+                        <p>🛍️ شاپنگ کا مزا 🛒</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1200">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m12.jpeg')">
+                        <img src="img/m12.jpeg" alt="Memory 12">
+                        <p>� گانے کی دھن �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1300">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m13.jpeg')">
+                        <img src="img/m13.jpeg" alt="Memory 13">
+                        <p>�️ سمندر کا سفر �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1400">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m14.jpeg')">
+                        <img src="img/m14.jpeg" alt="Memory 14">
+                        <p>� کتابوں کی دنیا �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1500">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m15.jpeg')">
+                        <img src="img/m15.jpeg" alt="Memory 15">
+                        <p>🎨 رنگوں کی دنیا 🖌️</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1600">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m16.jpeg')">
+                        <img src="img/m16.jpeg" alt="Memory 16">
+                        <p>🍦 آئس کریم کی خوشی 😄</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1700">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m17.jpeg')">
+                        <img src="img/m17.jpeg" alt="Memory 17">
+                        <p>☔ بارش میں بھیگنا 🌈</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1800">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m18.jpeg')">
+                        <img src="img/m18.jpeg" alt="Memory 18">
+                        <p>� کھیل کا جوش �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1900">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m19.jpeg')">
+                        <img src="img/m19.jpeg" alt="Memory 19">
+                        <p>� شام کی خوبصورتی �</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2000">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m20.jpeg')">
+                        <img src="img/m20.jpeg" alt="Memory 20">
+                        <p>🎁 پیار کا تحفہ 💝</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2100">
+                    <div class="polaroid" onclick="showFullscreenImage('img/m21.jpeg')">
+                        <img src="img/m21.jpeg" alt="Memory 21">
+                        <p>💕 ہماری کہانی ❤️</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-lg romantic-btn" onclick="showSection('final')">
+                    آخری surpriz <i class="fas fa-heart ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Emotional Page -->
+    <section id="final" class="section">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center text-white">
+                <div class="slow-text-animation" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 class="display-4 romantic-font mb-4">
+                        چاہے کچھ بھی ہو جائے...<br>
+                        میں ہمیشہ تمہیں چناں گی ❤️
+                    </h2>
+                </div>
+                
+                <div class="mt-5" data-aos="fade-up" data-aos-delay="1000">
+                    <h1 class="display-2 romantic-font text-warning">
+                        پھر سے... سالگرہ مبارک میری محبت 🎂
+                    </h1>
+                    <p class="lead mt-4">
+                        تم میرا آج اور میرے تمام کل ہو۔<br>
+                        میں تم سے الفاظ سے زیادہ محبت کرتی ہوں۔
+                    </p>
+                </div>
+                
+                <div class="mt-5">
+                    <button class="btn btn-outline-light btn-lg" onclick="showSection('homepage')">
+                        <i class="fas fa-redo me-2"></i>دوبارہ دیکھیں
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <img id="fullscreenImage" src="" alt="Fullscreen Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Birthday Wish Modal (Shows at 12:00) -->
+    <div class="modal fade" id="birthdayWishModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border-0" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+                <div class="modal-body text-center py-5">
+                    <div class="birthday-wish-content">
+                        <h1 class="display-3 romantic-font text-warning mb-4 animated-birthday-text">
+                            🎂 Happy Birthday My Love! 🎂
+                        </h1>
+                        <div class="cake-container mb-4" onclick="blowCandlesInModal()">
+                            <div class="cake">
+                                <div class="candles" id="modalCandles">
+                                    <div class="candle flame"></div>
+                                    <div class="candle flame"></div>
+                                    <div class="candle flame"></div>
+                                </div>
+                            </div>
+                            <p class="text-white mt-2">Click to blow candles! 🎂</p>
+                        </div>
+                        <p class="lead romantic-font">
+                            "At this magical midnight hour...<br>
+                            I want you to know you're my everything.<br>
+                            Happy Birthday to the love of my life! ❤️"
+                        </p>
+                        <div class="confetti-container" id="modalConfetti"></div>
+                        <button class="btn btn-lg romantic-btn mt-4" data-bs-dismiss="modal">
+                            Thank You My Love 💕
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra Features Modal -->
+    <div class="modal fade" id="extraFeaturesModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title romantic-font">Extra Special Features 💕</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <button class="btn btn-outline-danger w-100" onclick="showWhyILoveYou()">
+                                <i class="fas fa-heart"></i> Why I Love You
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-outline-info w-100" onclick="showCountdown()">
+                                <i class="fas fa-clock"></i> Next Meeting
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-outline-success w-100" onclick="startMiniGame()">
+                                <i class="fas fa-gamepad"></i> Love Game
+                            </button>
+                        </div>
+                    </div>
+                    <div id="extraContent" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Extra Features Button -->
+    <button class="btn btn-danger floating-btn" data-bs-toggle="modal" data-bs-target="#extraFeaturesModal">
+        <i class="fas fa-gift"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
