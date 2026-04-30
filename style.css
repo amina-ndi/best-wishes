@@ -827,6 +827,8 @@ p:hover {
         padding: 12px 24px;
         font-size: 0.9rem;
     }
+    
+    }
 
 @media (max-width: 480px) {
     .cake {
