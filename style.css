@@ -1198,7 +1198,7 @@ html {
 .birthday-heart:nth-child(even) {
     color: #fecfef;
     font-size: 18px;
-    animation-duration: 12s;
+    animation-duration: 11s;
 }
 
 @keyframes floatUp {
